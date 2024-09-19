@@ -33,6 +33,9 @@
 .bg-color-white {
     background-color: var(--color-white);
 }
+.bg_color_black {
+    background-color: var(--color-black);
+}
 /* font-size */
 .font_xxsm {
     font-size: var(--font-xxsm);

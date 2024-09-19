@@ -189,7 +189,7 @@
 }
 
 .heading {
-    padding: 28px 0 0 0;
+    padding: 28px 0 32px 0;
 }
 
 .a_man {
@@ -217,9 +217,9 @@
 .bull_bear {
     top: 183px;
 }
-.stretch_gain_bottom_shadow{
-    top: -3.5%;
-}
+        .stretch_gain_bottom_shadow {
+            top: -36%;
+        }
 
 /* ============================= timeline ======================== */
 .timeline_bg {
@@ -264,7 +264,6 @@
     position: relative;
     max-width: 880.76px;
     margin: 0 auto;
-    /* margin-top: 74px; */
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -285,7 +284,6 @@
     position: relative;
     background-color: inherit;
     width: 50%;
-    margin-top: -14px;
 }
 
 /* The circles on the timeline */
@@ -365,40 +363,6 @@
 .right::after {
     left: -34px;
 }
-
-/* The actual content */
-.content {
-    position: relative;
-    border-radius: 6px;
-    padding-right: 96px;
-}
-
-.content1 {
-    position: relative;
-    border-radius: 6px;
-    padding-left: 96px;
-}
-
-.ptb {
-    padding-top: 24px;
-    padding-bottom: 35px;
-}
-
-.max-w-786 {
-    max-width: 786px;
-}
-
-.timeand {
-    padding-top: 140px;
-}
-
-.timelineshadow {
-    position: absolute;
-    top: -20%;
-    left: 0;
-    z-index: -1;
-}
-
 /* =========================== */
 .game_theory {
     background-image: url(../images/webp/game_theory_bg_image.webp);
@@ -765,6 +729,9 @@
 }
 
 @media(min-width:476px) {
+        .stretch_gain_bottom_shadow {
+                top: -46px;
+            }
     .bull_bear {
         top: 130px;
     }
@@ -783,6 +750,9 @@
 }
 
 @media(min-width:576px) {
+            .stretch_gain_bottom_shadow {
+                    top: -54px;
+                }
     .a_man {
         width: 75.72px;
     }
@@ -830,6 +800,9 @@
 }
 
 @media(min-width:768px) {
+                .stretch_gain_bottom_shadow {
+                        top: -70px;
+                    }
     .timelinepy {
             padding: 55px 0 55px 0;
         }
@@ -842,6 +815,7 @@
 
     .timeline_box {
         max-width: 306px;
+            margin-top: -25px;
     }
 
     .fav_icon {
@@ -879,6 +853,9 @@
 }
 
 @media(min-width:992px) {
+                .stretch_gain_bottom_shadow {
+                        top: -85px;
+                    }
     .container2 {
         padding-left: 65px;
     }
@@ -915,7 +892,6 @@
 
     .main_para {
         max-width: 429px;
-        padding: 0 0 26px 0;
     }
 
     .main_heading {
@@ -955,8 +931,11 @@
 }
 
 @media(min-width:1024px) {
+                .stretch_gain_bottom_shadow {
+                        top: -102px;
+                    }
     .roadmap {
-            padding: 0 0 117.83px 0px;
+            padding: 0 0 65.83px 0px;
         }
     .sub_heading {
         padding: 140px 0 5px;
@@ -990,11 +969,14 @@
 }
 
 @media(min-width:1200px) {
+        .roadmap {
+                padding: 0 0 117.83px 0px;
+            }
     .timelinepy {
             padding: 70px 0 70px 0;
         }
     .sub_heading {
-        padding: 366px 0 5px;
+        padding: 320px 0 5px;
     }
 
     .animal {
@@ -1054,11 +1036,14 @@
 }
 
 @media(min-width:1400px) {
+    .stretch_gain_bottom_shadow {
+            top: -125px;
+        }
     .timelinepy {
             padding: 150px 0 142.85px 0;
         }
     .bull {
-        transform: translate(28px, -22px);
+        transform: translate(50px, -22px);
     }
 
     .bear {
