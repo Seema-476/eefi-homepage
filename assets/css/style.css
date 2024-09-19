@@ -65,11 +65,11 @@
 }
 
 .leading_3xl {
-    line-height: 55.2px;
+    line-height: 38.2px;
 }
 
 .leading_4xl {
-    line-height: 62.4px;
+    line-height: 33.4px;
 }
 
 .leading_5xl {
@@ -131,6 +131,31 @@
 
 .arrow {
     padding: 0 0 0 5px;
+    transition: .5s;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(-180deg);
+}
+.pointer_event{
+    pointer-events: none;
+}
+
+/* dropdown */
+.dropdown_content {
+    display: none;
+    min-width: 60px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content span {
+    color: var(--color-black);
+    padding: 5px 5px;
+    display: block;
 }
 
 /* =============== hero_section ============= */
@@ -182,14 +207,14 @@
 
 /* ============================ Amplify and stretch gains ======================= */
 .bg_image {
-    background-image: url(../images/png/Section2_bg.png);
+    background-image: url(../images/webp/Section2_bg.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .heading {
-    padding: 28px 0 32px 0;
+    padding: 20px 0 22px 0;
 }
 
 .a_man {
@@ -205,7 +230,6 @@
 .bull {
     max-width: 270.81px;
     min-height: 260.21px;
-    /* transform: translateX(50px); */
 }
 
 .bear {
@@ -215,11 +239,12 @@
 }
 
 .bull_bear {
-    top: 183px;
+    top: 72px;
 }
-        .stretch_gain_bottom_shadow {
-            top: -36%;
-        }
+
+.stretch_gain_bottom_shadow {
+    top: -36%;
+}
 
 /* ============================= timeline ======================== */
 .timeline_bg {
@@ -293,7 +318,7 @@
     width: 53px;
     height: 23px;
     right: -10px;
-    background-image: url(../images/png/timeline_circle2.png);
+    background-image: url(../images/webp/timeline_circle2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,7 +343,7 @@
     width: 53px;
     height: 23px;
     /* right: 1px; */
-    background-image: url(../images/png/timeline_cicle.png);
+    background-image: url(../images/webp/timeline_cicle.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -363,19 +388,21 @@
 .right::after {
     left: -34px;
 }
+
 /* =========================== */
 .game_theory {
     background-image: url(../images/webp/game_theory_bg_image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 64px 0 69px 0;
+    padding: 35px 0 38px 0;
+    margin-top: -3px;
 }
 
 .heading4 {
     font-weight: 800;
     max-width: 602px;
-    padding: 0 0 44px;
+    padding: 0 0 20px;
 }
 
 .game_theory_content {
@@ -384,7 +411,7 @@
 
 .game_theory_content2 {
     max-width: 489.98px;
-    padding: 21px 0 0;
+    padding: 12px 0 0;
 }
 
 .you {
@@ -571,10 +598,40 @@
     max-width: 376px;
 }
 
+.dotted {
+    min-height: 810px;
+    max-width: 530px;
+}
+
 .animal {
     max-width: 390px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+.topBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms linear;
+    z-index: 6;
+    border: 1px solid var(--color-blue);
+}
+
+.topBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.topBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 0 50px 2px var(--color-white);
 }
 
 @media(max-width:991.98px) {
@@ -657,8 +714,9 @@
     }
 
     .container2 {
-        padding: 15px 0 15px 60px;
+        padding: 0 0 0 60px;
         width: 100%;
+            margin-top: 16px;
     }
 
     .container1 {
@@ -683,7 +741,7 @@
     .container1::after {
         left: -14px;
         top: -5px;
-        background-image: url(../images/png/timeline_cicle.png);
+        background-image: url(../images/webp/timeline_cicle.webp);
     }
 }
 
@@ -712,13 +770,13 @@
 
 @media(min-width:385px) {
     .bull_bear {
-        top: 130px;
+        top: 60px;
     }
 }
 
 @media(min-width:425px) {
     .bull_bear {
-        top: 140px;
+        top: 67px;
     }
 
     .bull {
@@ -729,11 +787,12 @@
 }
 
 @media(min-width:476px) {
-        .stretch_gain_bottom_shadow {
-                top: -46px;
-            }
+    .stretch_gain_bottom_shadow {
+        top: -46px;
+    }
+
     .bull_bear {
-        top: 130px;
+        top: 70px;
     }
 
     .animal {
@@ -750,9 +809,14 @@
 }
 
 @media(min-width:576px) {
-            .stretch_gain_bottom_shadow {
-                    top: -54px;
-                }
+    .leading_3xl {
+        line-height: 45.2px;
+    }
+
+    .stretch_gain_bottom_shadow {
+        top: -54px;
+    }
+
     .a_man {
         width: 75.72px;
     }
@@ -762,7 +826,7 @@
     }
 
     .bull_bear {
-        top: -117px;
+        top: -120px;
     }
 
     .bull {
@@ -790,32 +854,52 @@
         max-width: 400px;
     }
 
-    .leading_llg {
-        line-height: 24px;
-    }
-
     .nav_bar ul {
         gap: 15px;
     }
 }
 
 @media(min-width:768px) {
-                .stretch_gain_bottom_shadow {
-                        top: -70px;
-                    }
+        .sub_heading {
+                padding: 110px 0 5px;
+            }
+    .game_theory {
+            padding: 48px 0 48px 0;
+        }
+    .game_theory_content2 {
+            padding: 15px 0 0;
+        }
+    .heading4 {
+            padding: 0 0 34px;
+        }
+    .heading {
+            padding: 25px 0 25px 0;
+        }
+    .leading_4xl {
+            line-height: 52.4px;
+        }
+        .leading_llg {
+                line-height: 24px;
+            }
+    .stretch_gain_bottom_shadow {
+        top: -70px;
+    }
+
     .timelinepy {
-            padding: 55px 0 55px 0;
-        }
+        padding: 55px 0 55px 0;
+    }
+
     .roadmap {
-            padding: 0 0 50px 0px;
-        }
+        padding: 0 0 50px 0px;
+    }
+
     .container2 {
         padding-left: 50px;
     }
 
     .timeline_box {
         max-width: 306px;
-            margin-top: -25px;
+        margin-top: -25px;
     }
 
     .fav_icon {
@@ -853,9 +937,10 @@
 }
 
 @media(min-width:992px) {
-                .stretch_gain_bottom_shadow {
-                        top: -85px;
-                    }
+    .stretch_gain_bottom_shadow {
+        top: -85px;
+    }
+
     .container2 {
         padding-left: 65px;
     }
@@ -884,6 +969,10 @@
         width: 87.72px;
         min-height: 223.43px;
         padding-bottom: 57px;
+    }
+
+    .leading_3xl {
+        line-height: 55.2px;
     }
 
     .bull_bear {
@@ -931,12 +1020,14 @@
 }
 
 @media(min-width:1024px) {
-                .stretch_gain_bottom_shadow {
-                        top: -102px;
-                    }
+    .stretch_gain_bottom_shadow {
+        top: -102px;
+    }
+
     .roadmap {
-            padding: 0 0 65.83px 0px;
-        }
+        padding: 0 0 65.83px 0px;
+    }
+
     .sub_heading {
         padding: 140px 0 5px;
     }
@@ -954,7 +1045,7 @@
     }
 
     .bull_bear {
-        top: -206px;
+        top: -216px;
         left: 65px;
     }
 
@@ -969,12 +1060,29 @@
 }
 
 @media(min-width:1200px) {
-        .roadmap {
-                padding: 0 0 117.83px 0px;
-            }
-    .timelinepy {
-            padding: 70px 0 70px 0;
+    .game_theory {
+            padding: 64px 0 69px 0;
         }
+    .game_theory_content2 {
+            padding: 21px 0 0;
+        }
+    .heading4 {
+            padding: 0 0 44px;
+        }
+    .heading {
+            padding: 28px 0 32px 0;
+        }
+    .leading_4xl {
+            line-height: 62.4px;
+        }
+    .roadmap {
+        padding: 0 0 117.83px 0px;
+    }
+
+    .timelinepy {
+        padding: 70px 0 70px 0;
+    }
+
     .sub_heading {
         padding: 320px 0 5px;
     }
@@ -1003,7 +1111,7 @@
     }
 
     .main_heading {
-        padding: 162px 0 30px 0;
+        padding: 162px 0 15px 0;
         max-width: 463px;
     }
 
@@ -1023,7 +1131,7 @@
     }
 
     .btn_enter {
-        padding: 16px 31px;
+        padding: 12px 31px;
     }
 
     .hero_content {
@@ -1037,11 +1145,13 @@
 
 @media(min-width:1400px) {
     .stretch_gain_bottom_shadow {
-            top: -125px;
-        }
+        top: -125px;
+    }
+
     .timelinepy {
-            padding: 150px 0 142.85px 0;
-        }
+        padding: 150px 0 142.85px 0;
+    }
+
     .bull {
         transform: translate(50px, -22px);
     }
