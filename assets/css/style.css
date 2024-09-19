@@ -267,8 +267,8 @@
 }
 
 .timeline_box {
-    border: 1px solid #1643C3;
-    background: #1643C31A;
+    border: 1px solid var(--color-blue);
+    background: var(--box-b);
     padding: 36px 15px;
     border-radius: 8px;
     max-width: 373px;
@@ -633,7 +633,76 @@
     transform: translateY(-5px);
     box-shadow: 4px 0 50px 2px var(--color-white);
 }
+@media(max-width:576.98px) {
+    .menu_icon {
+        width: 25px;
+        height: 20px;
+    }
 
+    .menu_icon>span {
+        height: 3px;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(40deg) translateY(11px);
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-40deg) translateY(-11px);
+    }
+
+    .timeline_box {
+        padding: 20px 10px;
+    }
+}
+@media(max-width:767.98px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: var(--color-blue);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin-left: -3px;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .container2 {
+        padding: 0 0 0 60px;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .container1 {
+        padding: 0 0 0 60px;
+        width: 100%;
+    }
+
+    .timeline_box {
+        padding: 20px 12px;
+    }
+
+    .year {
+        padding: 0 0 10px 0;
+    }
+
+    .container2::after {
+        left: -13px;
+        top: 14px;
+        margin-left: 0;
+    }
+
+    .container1::after {
+        left: -14px;
+        top: -5px;
+        background-image: url(../images/webp/timeline_cicle.webp);
+    }
+}
 @media(max-width:991.98px) {
     .menulist {
         width: 100%;
@@ -695,79 +764,6 @@
     }
 
 }
-
-@media(max-width:767.98px) {
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        background: var(--color-blue);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin-left: -3px;
-    }
-
-    .right {
-        left: 0;
-    }
-
-    .container2 {
-        padding: 0 0 0 60px;
-        width: 100%;
-            margin-top: 16px;
-    }
-
-    .container1 {
-        padding: 0 0 0 60px;
-        width: 100%;
-    }
-
-    .timeline_box {
-        padding: 20px 12px;
-    }
-
-    .year {
-        padding: 0 0 10px 0;
-    }
-
-    .container2::after {
-        left: -13px;
-        top: 14px;
-        margin-left: 0;
-    }
-
-    .container1::after {
-        left: -14px;
-        top: -5px;
-        background-image: url(../images/webp/timeline_cicle.webp);
-    }
-}
-
-@media(max-width:576.98px) {
-    .menu_icon {
-        width: 25px;
-        height: 20px;
-    }
-
-    .menu_icon>span {
-        height: 3px;
-    }
-
-    .cross span:nth-child(1) {
-        transform: rotate(40deg) translateY(11px);
-    }
-
-    .cross span:nth-child(3) {
-        transform: rotate(-40deg) translateY(-11px);
-    }
-
-    .timeline_box {
-        padding: 20px 10px;
-    }
-}
-
 @media(min-width:385px) {
     .bull_bear {
         top: 60px;
@@ -831,7 +827,6 @@
 
     .bull {
         max-width: 300.81px;
-        min-height: 225.21px;
         transform: translate(19px, 42px);
     }
 
