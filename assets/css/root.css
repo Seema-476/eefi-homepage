@@ -1,7 +1,7 @@
 :root{
         /* font-size */
             --font-xxsm: 14px;
-            --font-xsm: 14px;
+            --font-xsm: 12px;
             --font-sm: 18px;
             --font-md: 15px;
             --font-lg: 24px;
@@ -63,11 +63,12 @@
 }
 @media(min-width:576px) {
     :root {
-        --font-xsm: 16px;
+        --font-xsm: 14px;
     }
 }
 @media(min-width:768px) {
         :root {
+            --font-xsm: 16px;
                 --font-3xl: 50px;
             }
 }

@@ -16,7 +16,7 @@
 /* font family */
 @font-face {
     font-family: 'Neue Machina';
-    src: url(/assets/font/neue-machina/);
+    src: url(/assets/font/fonts/neue-machina/NeueMachina-Regular.ttf);
 }
 
 .font_Neue_Machina {
@@ -217,6 +217,9 @@
 .bull_bear {
     top: 183px;
 }
+.stretch_gain_bottom_shadow{
+    top: -3.5%;
+}
 
 /* ============================= timeline ======================== */
 .timeline_bg {
@@ -227,11 +230,11 @@
 }
 
 .roadmap {
-    padding: 0 0 117.83px 0px;
+    padding: 0 0 40px 0px;
 }
 
 .timelinepy {
-    padding: 150px 0 142.85px 0;
+    padding: 40px 0 40px 0;
 }
 
 .year {
@@ -269,7 +272,7 @@
     content: '';
     position: absolute;
     width: 2px;
-    height: 95%;
+    height: 100%;
     background: var(--color-blue);
     top: 0;
     bottom: 0;
@@ -671,52 +674,53 @@
     }
 
 }
-@media(max-width:767.98px){
+
+@media(max-width:767.98px) {
     .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            height: 100%;
-            background: var(--color-blue);
-            top: 0;
-            bottom: 0;
-            left: 0;
-            margin-left: -3px;
-        }
-    
-        .right {
-            left: 0;
-        }
-    
-        .container2 {
-            padding: 15px 0 15px 60px;
-            width: 100%;
-        }
-    
-        .container1 {
-            padding: 0 0 0 60px;
-            width: 100%;
-        }
-    
-        .timeline_box {
-            padding: 20px 12px;
-        }
-    
-        .year {
-            padding: 0 0 10px 0;
-        }
-    
-        .container2::after {
-            left: -13px;
-            top: 14px;
-            margin-left: 0;
-        }
-    
-        .container1::after {
-            left: -14px;
-            top: -5px;
-            background-image: url(../images/png/timeline_cicle.png);
-        }
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: var(--color-blue);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin-left: -3px;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .container2 {
+        padding: 15px 0 15px 60px;
+        width: 100%;
+    }
+
+    .container1 {
+        padding: 0 0 0 60px;
+        width: 100%;
+    }
+
+    .timeline_box {
+        padding: 20px 12px;
+    }
+
+    .year {
+        padding: 0 0 10px 0;
+    }
+
+    .container2::after {
+        left: -13px;
+        top: 14px;
+        margin-left: 0;
+    }
+
+    .container1::after {
+        left: -14px;
+        top: -5px;
+        background-image: url(../images/png/timeline_cicle.png);
+    }
 }
 
 @media(max-width:576.98px) {
@@ -735,6 +739,10 @@
 
     .cross span:nth-child(3) {
         transform: rotate(-40deg) translateY(-11px);
+    }
+
+    .timeline_box {
+        padding: 20px 10px;
     }
 }
 
@@ -822,6 +830,20 @@
 }
 
 @media(min-width:768px) {
+    .timelinepy {
+            padding: 55px 0 55px 0;
+        }
+    .roadmap {
+            padding: 0 0 50px 0px;
+        }
+    .container2 {
+        padding-left: 50px;
+    }
+
+    .timeline_box {
+        max-width: 306px;
+    }
+
     .fav_icon {
         width: 68px;
         height: 75px;
@@ -850,7 +872,21 @@
     }
 }
 
+@media(min-width:840px) {
+    .container2 {
+        padding-left: 76px;
+    }
+}
+
 @media(min-width:992px) {
+    .container2 {
+        padding-left: 65px;
+    }
+
+    .timeline_box {
+        max-width: 373px;
+    }
+
     .sub_heading {
         padding: 200px 0 5px;
     }
@@ -919,6 +955,9 @@
 }
 
 @media(min-width:1024px) {
+    .roadmap {
+            padding: 0 0 117.83px 0px;
+        }
     .sub_heading {
         padding: 140px 0 5px;
     }
@@ -951,6 +990,9 @@
 }
 
 @media(min-width:1200px) {
+    .timelinepy {
+            padding: 70px 0 70px 0;
+        }
     .sub_heading {
         padding: 366px 0 5px;
     }
@@ -985,7 +1027,7 @@
 
     .main_image {
         max-width: 668px;
-        transform: translate(22px ,-40px);
+        transform: translate(22px, -40px);
     }
 
     .nav_bar ul {
@@ -1012,6 +1054,9 @@
 }
 
 @media(min-width:1400px) {
+    .timelinepy {
+            padding: 150px 0 142.85px 0;
+        }
     .bull {
         transform: translate(28px, -22px);
     }
