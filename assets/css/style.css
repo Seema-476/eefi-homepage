@@ -244,7 +244,7 @@
 }
 
 .stretch_gain_bottom_shadow {
-    top: -36%;
+    top: -37px;
 }
 
 /* ============================= timeline ======================== */
@@ -471,7 +471,7 @@
 }
 
 .second_cards {
-    margin: 37px 0 0;
+    margin: 35px 0 0;
     gap: 10px;
     z-index: 2;
 }
@@ -487,7 +487,7 @@
 }
 
 .mobile_dots {
-    /* max-width: 229px; */
+    max-width: 229px;
 }
 
 .animal {
@@ -665,24 +665,25 @@
         top: 96px;
         left: 48px;
     }
-    .EEFI_bond_square{
+
+    .EEFI_bond_square {
         max-width: 109px !important;
     }
 
     .mobile_dots {
-        /* max-width: 235px; */
+        max-width: 235px;
     }
 }
 
 @media(min-width:425px) {
-        .dotted {
-                top: 97px;
-                left: 78px;
-            }
-        
-            .EEFI_bond_square {
-                max-width: 125px !important;
-            }
+    .dotted {
+        top: 97px;
+        left: 78px;
+    }
+
+    .EEFI_bond_square {
+        max-width: 125px !important;
+    }
 
     .bull_bear {
         top: 67px;
@@ -696,14 +697,15 @@
 }
 
 @media(min-width:475px) {
-        .dotted {
-                top: 96px;
-                left: 98px;
-            }
-        
-            .EEFI_bond_square {
-                max-width: 130px !important;
-            }
+    .dotted {
+        top: 96px;
+        left: 98px;
+    }
+
+    .EEFI_bond_square {
+        max-width: 130px !important;
+    }
+
     .stretch_gain_bottom_shadow {
         top: -46px;
     }
@@ -726,10 +728,11 @@
 }
 
 @media(min-width:576px) {
-            .dotted {
-                   top: 0;
-                   left: 0;
-                }
+    .dotted {
+        top: 0;
+        left: 0;
+    }
+
     .you_bg {
         padding: 21.31px 24.48px 20.47px 25.21px;
     }
@@ -749,7 +752,7 @@
     }
 
     .second_cards {
-        margin: 35px 0 0;
+        margin: 37px 0 0;
         gap: 25px;
     }
 
@@ -858,7 +861,6 @@
 
     .fav_icon {
         width: 68px;
-        height: 75px;
     }
 
     .leading_5xl {
@@ -1020,7 +1022,7 @@
     }
 
     .game_theory {
-        padding: 64px 0 69px 0;
+        padding: 64px 0 83.2px 0;
     }
 
     .game_theory_content2 {
