@@ -4,7 +4,7 @@
     --font-xsm: 12px;
     --font-sm: 18px;
     --font-md: 15px;
-    --font-lg: 24px;
+    --font-lg: 20px;
     --font-xl: 28px;
     --font-2xl: 23px;
     --font-3xl: 32px;
@@ -75,6 +75,7 @@
 
 @media(min-width:576px) {
     :root {
+        --font-lg: 24px;
         --font-xsm: 14px;
         --font-xl: 35px;
     }
@@ -91,7 +92,6 @@
 
 @media(min-width:992px) {
     :root {
-        --font-xl: 46px;
         --font-3xl: 65px;
     }
 }

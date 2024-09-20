@@ -8,7 +8,7 @@
 }
 
 .custom-container {
-    max-width: 1176px !important;
+    max-width: 1180px !important;
     padding: 0 24px 0 24px;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@
 }
 
 .leading_2xl {
-    line-height: 28.8px;
+    line-height: 24px;
 }
 
 .leading_3xl {
@@ -137,7 +137,8 @@
 .dropdown:hover .arrow {
     transform: rotate(-180deg);
 }
-.pointer_event{
+
+.pointer_event {
     pointer-events: none;
 }
 
@@ -420,7 +421,7 @@
 
 .you_bg {
     background-color: var(--color-blue);
-    padding: 21.31px 24.48px 20.47px 25.21px;
+    padding: 18.75px 17.93px;
     border-radius: 3.85px;
     height: 80.78px;
     border: 0.64px solid var(--border);
@@ -436,7 +437,7 @@
 }
 
 .interact {
-    padding: 15.48px 0 17.43px 80px;
+    padding: 13.7px 0 35.18px 80px;
 }
 
 .box_shadow {
@@ -451,156 +452,42 @@
     font-weight: 800 !important;
 }
 
-.EEFI_bond {
-    padding: 9.53px 0 4.32px;
-}
-
 .EEFI_bond_square {
-    padding: 17.33px 18.45px 19.83px 18.53px;
-}
-
-.EEFI_bond_svg {
-    width: 27.72px;
-    height: 25.99px;
-}
-
-.bond_text {
-    max-width: 123.02px;
-}
-
-.vault {
-    padding: 9.53px 0 4.32px;
-}
-
-.vault_square {
-    padding: 15.77px 34px 36.65px 34px;
-}
-
-.vault_svg {
-    width: 18.48px;
-    height: 23.1px;
-}
-
-.lp_square {
-    padding: 20.08px 18.49px 36.38px 18.49px;
-    max-width: 160px;
-}
-
-.lp_position {
-    padding: 7.8px 0 4.32px;
-}
-
-.lp_svg {
-    width: 23.1px;
-    height: 23.1px;
-}
-
-.cards {
-    max-width: 530px;
-    padding: 26.76px 0 37px;
-}
-
-.cards1 {
-    max-width: 530px;
-    padding: 0 0 37px;
-}
-
-.funding_square {
-    padding: 19.31px 7.96px 17.32px 8.04px;
-    max-width: 160px;
-}
-
-.funding {
-    padding: 9.37px 0 0;
-}
-
-.funding_svg {
-    width: 23px;
-    height: 23.97px;
-}
-
-.ohm_square {
-    padding: 17.33px 14.12px 16.04px 14.02px;
-    max-width: 160px;
-}
-
-.ohm {
-    padding: 11.26px 0 9.65px;
-}
-
-.ohm_svg {
-    width: 23px;
-    height: 23.97px;
-}
-
-.market_square {
-    padding: 17.33px 22.5px 35.1px 22.5px;
-    max-width: 160px;
-}
-
-.market {
-    padding: 9.53px 0 4.32px;
-}
-
-.market_svg {
-    width: 27.72px;
-    height: 27.72px;
-}
-
-.yield_growth_square {
-    padding: 18px 18.94px 15.69px 19.03px;
-    max-width: 160px;
+    max-width: 103px !important;
+    min-height: 138px;
+    padding: 12px 4px 4px;
 }
 
 .yield_growth {
-    padding: 15.51px 0 0;
+    max-width: 122px;
 }
 
-.yield_growth_svg {
-    width: 19.6px;
-    height: 19.6px;
+.first_col {
+    max-width: 570px;
 }
 
-.revenue_square {
-    padding: 24.38px 16.01px 15.69px 16.01px;
-    max-width: 160px;
+.second_col {
+    max-width: 530px !important;
 }
 
-.revenue {
-    padding: 12.69px 0 0;
+.second_cards {
+    margin: 37px 0 0;
+    gap: 10px;
+    z-index: 2;
 }
 
-.revenue_svg {
-    width: 22.51px;
-    height: 20.25px;
-}
-
-.cards2 {
-    max-width: 355px;
-    padding: 0 0 37px;
-}
-
-.furnace_square {
-    padding: 17.33px 16.96px 36.83px 16.96px;
-    max-width: 163px;
-}
-
-.furnace {
-    padding: 7.8px 0 4.32px;
-}
-
-.furnace_svg {
-    width: 22.51px;
-    height: 20.25px;
-}
-
-.card_top_border {
-    max-width: 376px;
+.three_cards {
+    gap: 10px;
 }
 
 .dotted {
-    min-height: 810px;
-    max-width: 530px;
+    top: 109px;
+    left: 48px;
+    z-index: 1;
+}
+
+.mobile_dots {
+    /* max-width: 229px; */
 }
 
 .animal {
@@ -608,9 +495,10 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
 .topBtn {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: none;
     position: fixed;
@@ -633,6 +521,7 @@
     transform: translateY(-5px);
     box-shadow: 4px 0 50px 2px var(--color-white);
 }
+
 @media(max-width:576.98px) {
     .menu_icon {
         width: 25px;
@@ -655,6 +544,7 @@
         padding: 20px 10px;
     }
 }
+
 @media(max-width:767.98px) {
     .timeline::after {
         content: '';
@@ -703,6 +593,7 @@
         background-image: url(../images/webp/timeline_cicle.webp);
     }
 }
+
 @media(max-width:991.98px) {
     .menulist {
         width: 100%;
@@ -764,13 +655,35 @@
     }
 
 }
+
 @media(min-width:385px) {
     .bull_bear {
         top: 60px;
     }
+
+    .dotted {
+        top: 96px;
+        left: 48px;
+    }
+    .EEFI_bond_square{
+        max-width: 109px !important;
+    }
+
+    .mobile_dots {
+        /* max-width: 235px; */
+    }
 }
 
 @media(min-width:425px) {
+        .dotted {
+                top: 97px;
+                left: 78px;
+            }
+        
+            .EEFI_bond_square {
+                max-width: 125px !important;
+            }
+
     .bull_bear {
         top: 67px;
     }
@@ -782,7 +695,15 @@
     }
 }
 
-@media(min-width:476px) {
+@media(min-width:475px) {
+        .dotted {
+                top: 96px;
+                left: 98px;
+            }
+        
+            .EEFI_bond_square {
+                max-width: 130px !important;
+            }
     .stretch_gain_bottom_shadow {
         top: -46px;
     }
@@ -805,6 +726,37 @@
 }
 
 @media(min-width:576px) {
+            .dotted {
+                   top: 0;
+                   left: 0;
+                }
+    .you_bg {
+        padding: 21.31px 24.48px 20.47px 25.21px;
+    }
+
+    .leading_2xl {
+        line-height: 28.8px;
+    }
+
+    .interact {
+        padding: 15.48px 0 43.8px 80px;
+    }
+
+    .EEFI_bond_square {
+        max-width: 160px !important;
+        min-height: 130px;
+        padding: 18px 8px 8px;
+    }
+
+    .second_cards {
+        margin: 35px 0 0;
+        gap: 25px;
+    }
+
+    .three_cards {
+        gap: 25px;
+    }
+
     .leading_3xl {
         line-height: 45.2px;
     }
@@ -855,27 +807,34 @@
 }
 
 @media(min-width:768px) {
-        .sub_heading {
-                padding: 110px 0 5px;
-            }
+    .sub_heading {
+        padding: 110px 0 5px;
+    }
+
     .game_theory {
-            padding: 48px 0 48px 0;
-        }
+        padding: 48px 0 48px 0;
+    }
+
     .game_theory_content2 {
-            padding: 15px 0 0;
-        }
+        padding: 15px 0 0;
+    }
+
     .heading4 {
-            padding: 0 0 34px;
-        }
+        padding: 0 0 34px;
+    }
+
     .heading {
-            padding: 25px 0 25px 0;
-        }
+        padding: 25px 0 25px 0;
+    }
+
     .leading_4xl {
-            line-height: 52.4px;
-        }
-        .leading_llg {
-                line-height: 24px;
-            }
+        line-height: 52.4px;
+    }
+
+    .leading_llg {
+        line-height: 24px;
+    }
+
     .stretch_gain_bottom_shadow {
         top: -70px;
     }
@@ -932,6 +891,11 @@
 }
 
 @media(min-width:992px) {
+    .topBtn {
+        width: 40px;
+        height: 40px;
+    }
+
     .stretch_gain_bottom_shadow {
         top: -85px;
     }
@@ -964,10 +928,6 @@
         width: 87.72px;
         min-height: 223.43px;
         padding-bottom: 57px;
-    }
-
-    .leading_3xl {
-        line-height: 55.2px;
     }
 
     .bull_bear {
@@ -1055,21 +1015,30 @@
 }
 
 @media(min-width:1200px) {
+    .leading_3xl {
+        line-height: 55.2px;
+    }
+
     .game_theory {
-            padding: 64px 0 69px 0;
-        }
+        padding: 64px 0 69px 0;
+    }
+
     .game_theory_content2 {
-            padding: 21px 0 0;
-        }
+        padding: 21px 0 0;
+    }
+
     .heading4 {
-            padding: 0 0 44px;
-        }
+        padding: 0 0 44px;
+    }
+
     .heading {
-            padding: 28px 0 32px 0;
-        }
+        padding: 28px 0 32px 0;
+    }
+
     .leading_4xl {
-            line-height: 62.4px;
-        }
+        line-height: 62.4px;
+    }
+
     .roadmap {
         padding: 0 0 117.83px 0px;
     }
