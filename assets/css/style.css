@@ -78,8 +78,7 @@
 
 /* ================= navbar ============== */
 .fav_icon {
-    width: 34px;
-    height: 38px;
+    width: 44px;
 }
 
 .about::after {
@@ -114,6 +113,9 @@
 
 .nav_bar ul {
     gap: 10px;
+}
+.nav_bar{
+    height: 50px;
 }
 
 .btn_enter {
@@ -797,7 +799,6 @@
 
     .fav_icon {
         width: 45px;
-        height: 54px;
     }
 
     .main_image {
@@ -810,6 +811,9 @@
 }
 
 @media(min-width:768px) {
+    .nav_bar {
+            height: 60px;
+        }
     .sub_heading {
         padding: 110px 0 5px;
     }
@@ -945,10 +949,14 @@
         max-width: 400px;
     }
 
-    .main_image {
+    /* .main_image {
         max-width: 530px;
         transform: translateY(-35px);
-    }
+    } */
+        .main_image {
+            max-width: 530px;
+            transform: translate(-4px, -20px);
+        }
 
     .leading_5xl {
         line-height: 75.74px;
@@ -1012,11 +1020,14 @@
     }
 
     .main_image {
-        transform: translateY(-34px);
+        transform: translate(-4px, -27px);
     }
 }
 
 @media(min-width:1200px) {
+    .nav_bar {
+            height: 75px;
+        }
     .leading_3xl {
         line-height: 55.2px;
     }
