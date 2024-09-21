@@ -10,7 +10,7 @@
 .custom-container {
     max-width: 1180px !important;
     padding: 0 24px 0 24px;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 /* font family */
@@ -114,7 +114,8 @@
 .nav_bar ul {
     gap: 10px;
 }
-.nav_bar{
+
+.nav_bar {
     height: 50px;
 }
 
@@ -159,6 +160,10 @@
     color: var(--color-black);
     padding: 5px 5px;
     display: block;
+}
+
+.max-w-1920 {
+    max-width: 1920px;
 }
 
 /* =============== hero_section ============= */
@@ -262,7 +267,7 @@
 }
 
 .timelinepy {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 30px 0;
 }
 
 .year {
@@ -294,7 +299,6 @@
     margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -307,14 +311,12 @@
     margin-left: -3px;
 }
 
-/* Container around content */
 .container1 {
     position: relative;
     background-color: inherit;
     width: 50%;
 }
 
-/* The circles on the timeline */
 .container1::after {
     content: '';
     position: absolute;
@@ -330,7 +332,6 @@
 
 }
 
-/* Container around content */
 .container2 {
     padding-left: 65px;
     position: relative;
@@ -339,13 +340,11 @@
     margin-top: -14px;
 }
 
-/* The circles on the timeline */
 .container2::after {
     content: '';
     position: absolute;
     width: 53px;
     height: 23px;
-    /* right: 1px; */
     background-image: url(../images/webp/timeline_cicle.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -355,39 +354,14 @@
     margin-left: 21px;
 }
 
-/* Place the container to the left */
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
 .right {
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-}
-
-/* Fix the circle for containers on the right side */
 .right::after {
     left: -34px;
 }
@@ -567,12 +541,13 @@
     .container2 {
         padding: 0 0 0 60px;
         width: 100%;
-        margin-top: 16px;
+        margin-bottom: 22px;
     }
 
     .container1 {
         padding: 0 0 0 60px;
         width: 100%;
+        margin-bottom: 35px;
     }
 
     .timeline_box {
@@ -812,8 +787,9 @@
 
 @media(min-width:768px) {
     .nav_bar {
-            height: 60px;
-        }
+        height: 60px;
+    }
+
     .sub_heading {
         padding: 110px 0 5px;
     }
@@ -864,7 +840,7 @@
     }
 
     .fav_icon {
-        width: 68px;
+        width: 60px;
     }
 
     .leading_5xl {
@@ -897,6 +873,28 @@
 }
 
 @media(min-width:992px) {
+    .eye{
+        width: 20px;
+    }
+            .bright {
+                    top: 115px;
+                    right: 156px;
+                }
+            
+                .bright1 {
+                    top: 115px;
+                    left: 210px;
+                }
+            
+                .bright2 {
+                    top: 109px;
+                    left: 145px;
+                }
+            
+                .bright3 {
+                    top: 112px;
+                    left: 102px;
+                }
     .topBtn {
         width: 40px;
         height: 40px;
@@ -953,10 +951,10 @@
         max-width: 530px;
         transform: translateY(-35px);
     } */
-        .main_image {
-            max-width: 530px;
-            transform: translate(-4px, -20px);
-        }
+    .main_image {
+        max-width: 530px;
+        transform: translate(-4px, -20px);
+    }
 
     .leading_5xl {
         line-height: 75.74px;
@@ -985,6 +983,28 @@
 }
 
 @media(min-width:1024px) {
+        .fav_icon {
+                width: 68px;
+            }
+        .bright {
+                top: 125px;
+                right: 167px;
+            }
+        
+            .bright1 {
+                top: 124px;
+                left: 219px;
+            }
+        
+            .bright2 {
+                top: 122px;
+                left: 158px;
+            }
+        
+            .bright3 {
+                top: 122px;
+                left: 117px;
+            }
     .stretch_gain_bottom_shadow {
         top: -102px;
     }
@@ -1025,9 +1045,33 @@
 }
 
 @media(min-width:1200px) {
-    .nav_bar {
-            height: 75px;
+    .eye {
+            width: 46px;
         }
+    .bright {
+            top: 187px;
+            right: 178px;
+        }
+    
+        .bright1 {
+            top: 187px;
+            left: 257px;
+        }
+    
+        .bright2 {
+            top: 206px;
+            left: 193px;
+        }
+    
+        .bright3 {
+            top: 209px;
+            left: 128px;
+        }
+    .nav_bar {
+        padding-top: 12px;
+        height: 75px;
+    }
+
     .leading_3xl {
         line-height: 55.2px;
     }
@@ -1121,6 +1165,23 @@
 }
 
 @media(min-width:1400px) {
+    .bright {
+            top: 191px;
+            right: 127px;
+        }
+    
+        .bright1 {
+            top: 191px;
+            left: 306px;
+        }
+    
+        .bright2 {
+            top: 171px;
+        }
+    
+        .bright3 {
+            top: 173px;
+        }
     .stretch_gain_bottom_shadow {
         top: -125px;
     }

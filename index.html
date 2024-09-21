@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/images/png/hero_main_img.png">
+    <link rel="icon" href="./assets/images/webp/hero_main_img.webp">
     <!-- Primary Meta Tags -->
     <title>EEFI-homepage</title>
     <meta name="title" content="EEFI-homepage" />
@@ -32,482 +32,548 @@
 </head>
 
 <body>
-    <header class="hero_bg position-relative">
-        <nav>
+    <main class="max-w-1920 mx-auto overflow-hidden position-relative">
+        <header class="hero_bg position-relative">
+            <nav>
+                <div class="custom-container">
+                    <div class="d-flex align-items-center justify-content-between nav_bar">
+                        <a href=""><img src="./assets/images/webp/fav_icon.webp" alt="icon" class="fav_icon"></a>
+                        <div class="menu_icon" onclick="open_nav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="ps-0 mb-0 d-flex align-items-center menulist" id="nav_list">
+                            <li><a href="#About"
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">About</a></li>
+                            <li><a href=""
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">IBO Event</a></li>
+                            <li><a href=""
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">EEFI Tokenomics</a></li>
+                            <li><a href="#Team"
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">Team</a></li>
+                            <li><a href=""
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">Partners</a></li>
+                            <li><a href="#Roadmap"
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
+                                    onclick="open_nav()">Roadmap</a></li>
+
+                            <li><a href=""
+                                    class="font_Raleway fw-medium font_xsm leading_sm color_white about1 position-relative dropdown"
+                                    onclick="open_nav()">More<span><img src="./assets/images/svg/dropdown_arrow.svg"
+                                            alt="arrow" class="arrow"></span>
+                                    <span class="dropdown_content position-absolute bg-color-white">
+                                        <span
+                                            class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative">Roadmap</span>
+                                        <span
+                                            class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative">Team</span>
+                                    </span></a></li>
+
+                            <li class="d-lg-none d-block"><button
+                                    class="btn_enter font_Raleway fw-medium font_xsm leading_sm color_blue">Enter
+                                    App</button></li>
+                        </ul>
+                        <div class="d-lg-block d-none">
+                            <button class="btn_enter font_Raleway fw-medium font_xsm leading_sm color_blue">Enter
+                                App</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="custom-container position-relative">
+                <div class="hero_content">
+                    <div>
+                        <h1 class="main_heading font_Neue_Machina fw-medium font_3xl leading_5xl color_white mb-0">
+                            BUILDING
+                            <span class="d-block">ELASTIC</span>
+                            <span class="d-block">PROTOCOL</span>
+                        </h1>
+                        <p class="main_para font_Raleway fw-normal font_xsm leading_llg color_white mb-0">An Ecosystem
+                            Of
+                            Unique Yield
+                            Strategies That Help You Earn Yield, Amplify, And Stretch It Across All Market Conditions
+                        </p>
+                        <p class="Audited font_Raleway fw-bold font_sm leading_mmd color_white mb-0">Audited by Omniscia
+                        </p>
+                    </div>
+                    <div class="main_image_position text-lg-end text-center mt-lg-0 mt-5">
+                        <img src="./assets/images/webp/hero_main_img.webp" alt="main"
+                            class="w-100 main_image pointer_event">
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute hero_dots_position d-lg-block d-none">
+                <img src="./assets/images/svg/hero_dots.svg" alt="dots"
+                    class="hero_dots d-lg-block d-none pointer_event">
+            </div>
+        </header>
+        <section class="bg_image" id="About">
+            <div class="bg_color_black">
+                <h2
+                    class="heading font_Plus_Jakarta_Sans fw-bolder font_2xl leading_4xl color_white mb-0 text-center fw_800">
+                    Amplify and STRETCH GAINS</h2>
+            </div>
+            <div class="custom-container position-relative">
+                <p
+                    class="sub_heading font_Raleway fw-normal leading_lg font_xxsm color_white mb-0 text-center mx-auto position-relative z-2">
+                    We
+                    take a different balanced approach to finding and creating yield opportunities in the everchanging
+                    crypto market. Our
+                    yield strategies help users stay protected and hedged during bear markets and amplify yield during
+                    bull
+                    markets without
+                    resorting to leverage or other dangerous techniques.</p>
+                <div class="d-sm-none">
+                    <div class="animal">
+                        <div class="d-flex position-absolute bull_bear">
+                            <div class="">
+                                <img src="./assets/images/webp/bull_image.webp" alt="bull" class="w-100 bull">
+                            </div>
+                            <div class="">
+                                <img src="./assets/images/webp/bear_image.webp" alt="bear" class="w-100 bear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-block d-none">
+                    <div class="animal position-relative">
+                        <div class="row position-absolute bull_bear">
+                            <div class="col-6 px-0 position-relative">
+                                <img src="./assets/images/webp/bull_image.webp" alt="bull" class="w-100 bull">
+                                <div class="position-absolute bright d-lg-block d-none">
+                                    <img src="./assets/images/svg/bright.svg" alt="bright" class="eye">
+                                </div>
+                                <div class="position-absolute bright1 d-lg-block d-none">
+                                    <img src="./assets/images/svg/bright.svg" alt="bright" class="eye">
+                                </div>
+                            </div>
+                            <div class="col-6 px-0 position-relative d-lg-block d-none">
+                                <img src="./assets/images/webp/bear_image.webp" alt="bear" class="w-100 bear">
+                                <div class="position-absolute bright2">
+                                    <img src="./assets/images/svg/bright.svg" alt="bright" class="eye">
+                                </div>
+                                <div class="position-absolute bright3 d-lg-block d-none">
+                                    <img src="./assets/images/svg/bright.svg" alt="bright" class="eye">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mx-auto">
+                    <img src="./assets/images/webp/a_man.webp" alt="man" class="a_man">
+                </div>
+            </div>
+        </section>
+        <!-- timeline -->
+        <section class="timeline_bg timelinepy position-relative" id="Roadmap">
+            <div class="position-absolute stretch_gain_bottom_shadow">
+                <img src="./assets/images/webp/stretch_gain_bottom_shadow.webp" alt="shadow"
+                    class="w-100 pointer_event">
+            </div>
             <div class="custom-container">
-                <div class="d-flex align-items-center justify-content-between nav_bar">
-                    <a href=""><img src="./assets/images/webp/fav_icon.webp" alt="icon" class="fav_icon"></a>
-                    <div class="menu_icon" onclick="open_nav()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="ps-0 mb-0 d-flex align-items-center menulist" id="nav_list">
-                        <li><a href="#About"
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">About</a></li>
-                        <li><a href=""
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">IBO Event</a></li>
-                        <li><a href=""
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">EEFI Tokenomics</a></li>
-                        <li><a href="#Team"
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">Team</a></li>
-                        <li><a href=""
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">Partners</a></li>
-                        <li><a href="#Roadmap"
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative"
-                                onclick="open_nav()">Roadmap</a></li>
-
-                        <li><a href=""
-                                class="font_Raleway fw-medium font_xsm leading_sm color_white about1 position-relative dropdown"
-                                onclick="open_nav()">More<span><img src="./assets/images/svg/dropdown_arrow.svg"
-                                        alt="arrow" class="arrow"></span>
-                                <span class="dropdown_content position-absolute bg-color-white">
-                                    <span
-                                        class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative">Roadmap</span>
-                                    <span
-                                        class="font_Raleway fw-medium font_xsm leading_sm color_white about position-relative">Team</span>
-                                </span></a></li>
-
-                        <li class="d-lg-none d-block"><button
-                                class="btn_enter font_Raleway fw-medium font_xsm leading_sm color_blue">Enter
-                                App</button></li>
-                    </ul>
-                    <div class="d-lg-block d-none">
-                        <button class="btn_enter font_Raleway fw-medium font_xsm leading_sm color_blue">Enter
-                            App</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="custom-container position-relative">
-            <div class="hero_content">
-                <div>
-                    <h1 class="main_heading font_Neue_Machina fw-medium font_3xl leading_5xl color_white mb-0">BUILDING
-                        <span class="d-block">ELASTIC</span>
-                        <span class="d-block">PROTOCOL</span>
-                    </h1>
-                    <p class="main_para font_Raleway fw-normal font_xsm leading_llg color_white mb-0">An Ecosystem Of
-                        Unique Yield
-                        Strategies That Help You Earn Yield, Amplify, And Stretch It Across All Market Conditions</p>
-                    <p class="Audited font_Raleway fw-bold font_sm leading_mmd color_white mb-0">Audited by Omniscia</p>
-                </div>
-                <div class="main_image_position text-lg-end text-center mt-lg-0 mt-5">
-                    <img src="./assets/images/webp/hero_main_img.webp" alt="main"
-                        class="w-100 main_image pointer_event">
-                </div>
-            </div>
-        </div>
-        <div class="position-absolute hero_dots_position d-lg-block d-none">
-            <img src="./assets/images/svg/hero_dots.svg" alt="dots" class="hero_dots d-lg-block d-none pointer_event">
-        </div>
-    </header>
-    <section class="bg_image" id="About">
-        <div class="bg_color_black">
-            <h2
-                class="heading font_Plus_Jakarta_Sans fw-bolder font_2xl leading_4xl color_white mb-0 text-center fw_800">
-                Amplify and STRETCH GAINS</h2>
-        </div>
-        <div class="custom-container position-relative">
-            <p
-                class="sub_heading font_Raleway fw-normal leading_lg font_xxsm color_white mb-0 text-center mx-auto position-relative z-2">
-                We
-                take a different balanced approach to finding and creating yield opportunities in the everchanging
-                crypto market. Our
-                yield strategies help users stay protected and hedged during bear markets and amplify yield during bull
-                markets without
-                resorting to leverage or other dangerous techniques.</p>
-            <div class="d-sm-none">
-                <div class="animal">
-                    <div class="d-flex position-absolute bull_bear">
-                        <div class="">
-                            <img src="./assets/images/webp/bull_image.webp" alt="bull" class="w-100 bull">
-                        </div>
-                        <div class="">
-                            <img src="./assets/images/webp/bear_image.webp" alt="bear" class="w-100 bear">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-sm-block d-none">
-                <div class="animal position-relative">
-                    <div class="row position-absolute bull_bear">
-                        <div class="col-6 px-0">
-                            <img src="./assets/images/webp/bull_image.webp" alt="bull" class="w-100 bull">
-                        </div>
-                        <div class="col-6 px-0">
-                            <img src="./assets/images/webp/bear_image.webp" alt="bear" class="w-100 bear">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mx-auto">
-                <img src="./assets/images/webp/a_man.webp" alt="man" class="a_man">
-            </div>
-        </div>
-    </section>
-    <!-- timeline -->
-    <section class="timeline_bg timelinepy position-relative" id="Roadmap">
-        <div class="position-absolute stretch_gain_bottom_shadow">
-            <img src="./assets/images/webp/stretch_gain_bottom_shadow.webp" alt="shadow" class="w-100 pointer_event">
-        </div>
-        <div class="custom-container">
-            <h3 class="roadmap font_Neue_Machina fw-bold font_xl leading_3xl color_white mb-0 text-center ">Roadmap</h3>
-            <div class="timeline">
-                <div class="container1 left">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">2022</p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Ideation of Elastic Protocol</p>
-                            <div class="ps-4">
+                <h3 class="roadmap font_Neue_Machina fw-bold font_xl leading_3xl color_white mb-0 text-center ">Roadmap
+                </h3>
+                <div class="timeline">
+                    <div class="container1 left">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">2022
+                            </p>
+                            <div>
                                 <p
                                     class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Elastic Protocol GitBook</p>
+                                    Ideation of Elastic Protocol</p>
+                                <div class="ps-4">
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Elastic Protocol GitBook</p>
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Full Code development of Elastic Vault Strategy</p>
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Audit</p>
+                                </div>
                                 <p
                                     class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Full Code development of Elastic Vault Strategy</p>
-                                <p
-                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Audit</p>
+                                    Complete Alpha Testing</p>
                             </div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Complete Alpha Testing</p>
                         </div>
                     </div>
-                </div>
-                <div class="container2 right">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">2023
-                            Beginning</p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Olympus Partnership Beginning</p>
-                            <div class="ps-4">
+                    <div class="container2 right">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">2023
+                                Beginning</p>
+                            <div>
                                 <p
                                     class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    $25k Grant 2023</p>
+                                    Olympus Partnership Beginning</p>
+                                <div class="ps-4">
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        $25k Grant 2023</p>
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        $150k Total seeded Liquidity sought from Olympus DAO</p>
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Third Party Partner Intros
+                                    </p>
+                                </div>
                                 <p
                                     class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    $150k Total seeded Liquidity sought from Olympus DAO</p>
-                                <p
-                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Third Party Partner Intros
-                                </p>
+                                    Elastic Vault Strategy Updates + Olympus $OHM Integrations</p>
                             </div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic Vault Strategy Updates + Olympus $OHM Integrations</p>
                         </div>
                     </div>
-                </div>
-                <div class="container1 left mt-3 mt-md-0">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q3 2023
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Partner launched KOLs Marketing Campaign | Rally larger community base</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Balancer $EEFI Pools launch</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Launch of Elastic Vault Strategy (flagship) + $EEF</p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic IBO Fundraising Event [Rounds Begin]</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container2 right">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q4 2023
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Front End upgrade</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                INO [Initial NFT Offering]: Social Elastic NFT campaign</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Initial Olympus econOHMy Vaults: </p>
-                            <div class="ps-4">
-                                <p
-                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Elastic | FRAXBP LP Vault</p>
+                    <div class="container1 left">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q3
+                                2023
+                            </p>
+                            <div>
                                 <p
                                     class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                    Olympus | Uniswap LP Vault </p>
+                                    Partner launched KOLs Marketing Campaign | Rally larger community base</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Balancer $EEFI Pools launch</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Launch of Elastic Vault Strategy (flagship) + $EEF</p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Elastic IBO Fundraising Event [Rounds Begin]</p>
                             </div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic Community Engagement: Onboard contributors to drive protocol development,
-                                partnerships, community development
-                                and begin governance activities</p>
                         </div>
                     </div>
-                </div>
-                <div class="container1 left mt-3 mt-md-0">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q1 2024
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic Research and Development: Explore additional vault strategies and develop risk
-                                and due-diligence procedures
-                                associated with strategy development and implementation</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic Vault (Sub-Vaults): Begin exploring additional tokens to add to core Elastic
-                                Vault strategy</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Arbitrum Layer 2 yield strategy considerations</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Begin developing comprehensive tokenomics for $EFT (Elastic Protocol governance token)
+                    <div class="container2 right">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q4
+                                2023
                             </p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                First $EEFI Bonds Program [Bond Protocol] (beta): treasury bolster fundraise</p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Front End upgrade</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    INO [Initial NFT Offering]: Social Elastic NFT campaign</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Initial Olympus econOHMy Vaults: </p>
+                                <div class="ps-4">
+                                    <p
+                                        class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Elastic | FRAXBP LP Vault</p>
+                                    <p
+                                        class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                        Olympus | Uniswap LP Vault </p>
+                                </div>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Elastic Community Engagement: Onboard contributors to drive protocol development,
+                                    partnerships, community development
+                                    and begin governance activities</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container2 right">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q2 2024
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Gearbox | OHM [Perp-Leverage] Vault</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Bond Protocol (Bonding) Vault</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Future Strategy (vote): Real Yield GMX | GPL Vault </p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Future Strategy (vote): Elastic Options Vault (sub-vault)</p>
+                    <div class="container1 left">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q1
+                                2024
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Elastic Research and Development: Explore additional vault strategies and develop
+                                    risk
+                                    and due-diligence procedures
+                                    associated with strategy development and implementation</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Elastic Vault (Sub-Vaults): Begin exploring additional tokens to add to core Elastic
+                                    Vault strategy</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Arbitrum Layer 2 yield strategy considerations</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Begin developing comprehensive tokenomics for $EFT (Elastic Protocol governance
+                                    token)
+                                </p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    First $EEFI Bonds Program [Bond Protocol] (beta): treasury bolster fundraise</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container1 left mt-3 mt-md-0">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q3 2024
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Establish DAO to govern Elastic Finance and fully decentralize protocol</p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Elastic Yield Alliance (Strategic Yield Strategy Partners): begin governance vote for
-                                Multi-chain yield strategies</p>
+                    <div class="container2 right">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q2
+                                2024
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Gearbox | OHM [Perp-Leverage] Vault</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Bond Protocol (Bonding) Vault</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Future Strategy (vote): Real Yield GMX | GPL Vault </p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Future Strategy (vote): Elastic Options Vault (sub-vault)</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container2 right">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q4 2024
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Community voted Yield Strategy 1 (governance)</p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                $EEFI Borrowing and Lending Partnership</p>
+                    <div class="container1 left">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q3
+                                2024
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Establish DAO to govern Elastic Finance and fully decentralize protocol</p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Elastic Yield Alliance (Strategic Yield Strategy Partners): begin governance vote
+                                    for
+                                    Multi-chain yield strategies</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container1 left mt-3 mt-md-0">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q1 2025
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Community voted Yield Strategy 2 (governance)</p>
-                            <p
-                                class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Olympus RBS-OHM Real Yield Vault (strategy)</p>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Launch EFT governance token Airdrop</p>
+                    <div class="container2 right">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q4
+                                2024
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Community voted Yield Strategy 1 (governance)</p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    $EEFI Borrowing and Lending Partnership</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container2 right">
-                    <div class="timeline_box">
-                        <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q2 2025
-                        </p>
-                        <div>
-                            <p
-                                class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
-                                Hand over Elastic Finance DAO to Community: Complete decentralization of Elastic Finance
-                                DAO, its treasury, its yield
-                                strategies and community governance</p>
+                    <div class="container1 left">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q1
+                                2025
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Community voted Yield Strategy 2 (governance)</p>
+                                <p
+                                    class="elastic position-relative ps-4 pb-1 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Olympus RBS-OHM Real Yield Vault (strategy)</p>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Launch EFT governance token Airdrop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container2 right">
+                        <div class="timeline_box">
+                            <p class="year font_Plus_Jakarta_Sans fw-medium font_md leading_llg color_white mb-0">Q2
+                                2025
+                            </p>
+                            <div>
+                                <p
+                                    class="elastic position-relative ps-4 font_Raleway fw-normal font_xsm leading_llg color_white mb-0">
+                                    Hand over Elastic Finance DAO to Community: Complete decentralization of Elastic
+                                    Finance
+                                    DAO, its treasury, its yield
+                                    strategies and community governance</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- game_theory -->
-    <section class="game_theory" id="Team">
-        <div class="custom-container">
-            <div class="d-lg-flex w-100 justify-content-center">
-                <div class="d-flex flex-column first_col justify-content-center mx-auto mx-lg-0">
-                    <h4 class="heading4 font_Neue_Machina font_xl leading_3xl color_white mb-0 text-start text-sm-center text-lg-start">(E,E) Game Theory:
-                        An
-                        UPGRADE From (3,3)
-                    </h4>
-                    <p
-                        class="game_theory_content font_Raleway fw-normal font_xsm leading_xl color_white mb-0 fst-italic text-sm-center text-start text-lg-start mx-auto mx-lg-0">
-                        Remember (3,3) at
-                        its core was about social coordination. Or, people working together to achieve a common
-                        outcome
-                        or
-                        goal. (E,E) is the same. But with (E,E) people are working together not to grow a robust
-                        treasury that would back a
-                        decentralized stablecoin but instead to establish the first ever decentralized amplified
-                        yield
-                        token… $EEFI. A token
-                        that can produce yield in any market condition.</p>
-                    <p
-                        class="game_theory_content2 font_Raleway fw-normal font_xsm leading_xl color_white mb-0 fst-italic text-sm-center text-start text-lg-start mx-auto mx-lg-0">
-                        To achieve this
-                        (E,E) has everyone work together by interacting with and supporting its ecosystem flywheel:
-                        Vaults,
-                        Bonds, Markets and other components. Interaction with the (E,E) Flywheel will help build a
-                        treasury of what we term
-                        high
-                        quality “growth assets”. Assets that are revenue bearing, interest bearing, Real Yield
-                        bearing
-                        or Rebase bearing.
-                        Where
-                        the ‘growth’ aka the yields of these assets are used to act as long term decentralized
-                        leverage
-                        on EEFI’s value.
-                        This is
-                        (E,E). This is sustainable. This is the UPGRADE.</p>
-                </div>
-                <div class="position-relative second_col w-100 mt-lg-0 mt-5 mx-auto">
-                    <div class="mx-auto outline position-relative z-2">
-                        <div class="you_bg">
-                            <p class="you font_Neue_Machina font_lg leading_2xl color_white mb-0 text-center">YOU</p>
-                            <p class="font_Raleway fw-normal font_xxsm leading_lg color_white mb-0">(Flywheel)</p>
-                        </div>
+        </section>
+        <!-- game_theory -->
+        <section class="game_theory" id="Team">
+            <div class="custom-container">
+                <div class="d-lg-flex w-100 justify-content-center">
+                    <div class="d-flex flex-column first_col justify-content-center mx-auto mx-lg-0">
+                        <h4
+                            class="heading4 font_Neue_Machina font_xl leading_3xl color_white mb-0 text-start text-sm-center text-lg-start">
+                            (E,E) Game Theory:
+                            An
+                            UPGRADE From (3,3)
+                        </h4>
+                        <p
+                            class="game_theory_content font_Raleway fw-normal font_xsm leading_xl color_white mb-0 fst-italic text-sm-center text-start text-lg-start mx-auto mx-lg-0">
+                            Remember (3,3) at
+                            its core was about social coordination. Or, people working together to achieve a common
+                            outcome
+                            or
+                            goal. (E,E) is the same. But with (E,E) people are working together not to grow a robust
+                            treasury that would back a
+                            decentralized stablecoin but instead to establish the first ever decentralized amplified
+                            yield
+                            token… $EEFI. A token
+                            that can produce yield in any market condition.</p>
+                        <p
+                            class="game_theory_content2 font_Raleway fw-normal font_xsm leading_xl color_white mb-0 fst-italic text-sm-center text-start text-lg-start mx-auto mx-lg-0">
+                            To achieve this
+                            (E,E) has everyone work together by interacting with and supporting its ecosystem flywheel:
+                            Vaults,
+                            Bonds, Markets and other components. Interaction with the (E,E) Flywheel will help build a
+                            treasury of what we term
+                            high
+                            quality “growth assets”. Assets that are revenue bearing, interest bearing, Real Yield
+                            bearing
+                            or Rebase bearing.
+                            Where
+                            the ‘growth’ aka the yields of these assets are used to act as long term decentralized
+                            leverage
+                            on EEFI’s value.
+                            This is
+                            (E,E). This is sustainable. This is the UPGRADE.</p>
                     </div>
-                    <p class="font_Raleway fw_800 font_xxsm leading_xsm color_white mb-0 interact text-center position-relative z-2">Interact
-                    </p>
-                    <div class="d-flex justify-content-between w-100 position-relative three_cards z-2">
-                        <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
-                            <img src="./assets/images/svg/bond_svg.svg" alt="bond" class="EEFI_bond_svg pointer_event">
-                            <p class="EEFI_bond font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 w-100 mt-2">
-                                EEFI
-                                Bonds</p>
-                            <p class="bond_text font_Raleway fw-normal font_xxsm leading_xsm color_black mb-0 mt-1">
-                                Purchase.
-                                Lock Up. Get Discount</p>
+                    <div class="position-relative second_col w-100 mt-lg-0 mt-5 mx-auto">
+                        <div class="mx-auto outline position-relative z-2">
+                            <div class="you_bg">
+                                <p class="you font_Neue_Machina font_lg leading_2xl color_white mb-0 text-center">YOU
+                                </p>
+                                <p class="font_Raleway fw-normal font_xxsm leading_lg color_white mb-0">(Flywheel)</p>
+                            </div>
                         </div>
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                        <p
+                            class="font_Raleway fw_800 font_xxsm leading_xsm color_white mb-0 interact text-center position-relative z-2">
+                            Interact
+                        </p>
+                        <div class="d-flex justify-content-between w-100 position-relative three_cards z-2">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                                <img src="./assets/images/svg/bond_svg.svg" alt="bond"
+                                    class="EEFI_bond_svg pointer_event">
+                                <p
+                                    class="EEFI_bond font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 w-100 mt-2">
+                                    EEFI
+                                    Bonds</p>
+                                <p class="bond_text font_Raleway fw-normal font_xxsm leading_xsm color_black mb-0 mt-1">
+                                    Purchase.
+                                    Lock Up. Get Discount</p>
+                            </div>
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/vault.svg" alt="bond" class="vault_svg pointer_event">
-                                <p class="vault font_Neue_Machina font_xsm leading_xl color_black fw_800 mb-0 mt-2">Vault</p>
+                                <p class="vault font_Neue_Machina font_xsm leading_xl color_black fw_800 mb-0 mt-2">
+                                    Vault
+                                </p>
                                 <p class="vault_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
                                     Deposit +
                                     Earn
                                 </p>
                             </div>
-                                <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/lp_position.svg" alt="bond" class="lp_svg pointer_event">
-                                <p class="lp_position font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 mt-2">LP
+                                <p
+                                    class="lp_position font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 mt-2">
+                                    LP
                                     Positions</p>
-                                <p class="vault_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">Yield
+                                <p class="vault_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
+                                    Yield
                                     Farming
                                 </p>
-                                </div>
-                   </div>
+                            </div>
+                        </div>
                         <div class="d-flex justify-content-between w-100 second_cards position-relative">
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/funding.svg" alt="bond" class="pointer_event">
-                                <p class="funding font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2">Funding
+                                <p class="funding font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2">
+                                    Funding
                                     Raised Acquires Growth Assets</p>
                             </div>
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/ohm_treasury.svg" alt="bond" class="pointer_event">
                                 <p class="ohm font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2">OHM
                                     Treasury
                                     Strategy</p>
-                                <p class="ohm_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">Deposit
+                                <p class="ohm_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
+                                    Deposit
                                     +
                                     Earn</p>
                             </div>
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/ohm_treasury.svg" alt="bond" class="pointer_event">
-                                <p class="market font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800  mt-2">Markets
+                                <p class="market font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800  mt-2">
+                                    Markets
                                 </p>
-                                <p class="market_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
+                                <p
+                                    class="market_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
                                     Trade +
                                     Arb (Fees)</p>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center w-100 second_cards position-relative">
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
-                            <img src="./assets/images/svg/yield_growth.svg" alt="bond" class="yield_growth_svg pointer_event">
-                            <p class="yield_growth font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2 text-center mx-auto">
-                                Yield
-                                From Growth Assets</p>
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                                <img src="./assets/images/svg/yield_growth.svg" alt="bond"
+                                    class="yield_growth_svg pointer_event">
+                                <p
+                                    class="yield_growth font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2 text-center mx-auto">
+                                    Yield
+                                    From Growth Assets</p>
                             </div>
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/revenue.svg" alt="bond" class="revenue_svg pointer_event">
-                                <p class="revenue font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2">Fees.
+                                <p class="revenue font_Neue_Machina font_xsm leading_md color_black mb-0 fw_800 mt-2">
+                                    Fees.
                                     Revenue. Yield to Treasury</p>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center w-100 second_cards position-relative">
-                            <div class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
+                            <div
+                                class="EEFI_bond_square h-100 box_shadow bg-color-white border_radius text-center w-100">
                                 <img src="./assets/images/svg/furnace.svg" alt="bond" class="furnace_svg pointer_event">
-                                <p class="furnace font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 mt-2">EEFI
+                                <p class="furnace font_Neue_Machina font_xsm leading_xl color_black mb-0 fw_800 mt-2">
+                                    EEFI
                                     Furnace
                                 </p>
-                                <p class="ohm_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">Buy + Burn
+                                <p class="ohm_text font_Raleway fw-normal font_xxsm leading_lg color_black mb-0 mt-1">
+                                    Buy +
+                                    Burn
                                     EEFI
                                 </p>
                             </div>
                         </div>
                         <div class="position-absolute dotted">
                             <img src="./assets/images/webp/dotted.webp" alt="dotted" class="w-100 d-sm-block d-none">
-                            <img src="./assets/images/webp/mobile_view_dotted.webp" alt="mobile" class="w-100 d-sm-none d-block mobile_dots">
+                            <img src="./assets/images/webp/mobile_view_dotted.webp" alt="mobile"
+                                class="w-100 d-sm-none d-block mobile_dots">
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="topBtn d-flex align-items-center justify-content-center bg-color-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
-                class="bi bi-chevron-double-up" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
-                <path fill-rule="evenodd"
-                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-            </svg>
-        </div>
-    </section>
-
+            <div class="topBtn d-flex align-items-center justify-content-center bg-color-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                    class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                    <path fill-rule="evenodd"
+                        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                </svg>
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
