@@ -233,15 +233,16 @@
 .sub_heading {
     max-width: 554px;
     padding: 60px 0 5px;
+    filter: drop-shadow(2px 2px 2px var(--color-black));
 }
 
 .bull {
-    max-width: 270.81px;
+    max-width: 300.81px;
     min-height: 260.21px;
 }
 
 .bear {
-    max-width: 250.64px;
+    max-width: 290.64px;
     min-height: 245.34px;
     transform: translate(-20px, 20px);
 }
@@ -252,6 +253,12 @@
 
 .stretch_gain_bottom_shadow {
     top: -37px;
+    left: 0;
+    right: 0;
+}
+
+.cloud_img {
+    height: 60px !important;
 }
 
 /* ============================= timeline ======================== */
@@ -276,7 +283,7 @@
 
 .timeline_box {
     border: 1px solid var(--color-blue);
-    background: var(--box-b);
+    background: var(--box-bg);
     padding: 36px 15px;
     border-radius: 8px;
     max-width: 373px;
@@ -388,7 +395,7 @@
 
 .game_theory_content2 {
     max-width: 489.98px;
-    padding: 12px 0 0;
+    padding: 8px 0 0;
 }
 
 .you {
@@ -500,20 +507,20 @@
 
 @media(max-width:576.98px) {
     .menu_icon {
-        width: 25px;
-        height: 20px;
+        width: 25px !important;
+        height: 18px !important;
     }
 
     .menu_icon>span {
-        height: 3px;
+        height: 3px !important;
     }
 
     .cross span:nth-child(1) {
-        transform: rotate(40deg) translateY(11px);
+        transform: rotate(40deg) translateY(10px) !important;
     }
 
     .cross span:nth-child(3) {
-        transform: rotate(-40deg) translateY(-11px);
+        transform: rotate(-40deg) translateY(-10px) !important;
     }
 
     .timeline_box {
@@ -684,7 +691,7 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -46px;
+        top: -30px;
     }
 
     .bull_bear {
@@ -705,6 +712,13 @@
 }
 
 @media(min-width:576px) {
+    .stretch_gain_bottom_shadow {
+            top: -39px;
+        }
+    
+        .cloud_img {
+            height: 80px !important;
+        }
     .dotted {
         top: 0;
         left: 0;
@@ -739,10 +753,6 @@
 
     .leading_3xl {
         line-height: 45.2px;
-    }
-
-    .stretch_gain_bottom_shadow {
-        top: -54px;
     }
 
     .a_man {
@@ -788,6 +798,7 @@
 @media(min-width:768px) {
     .nav_bar {
         height: 60px;
+        padding-top: 18px;
     }
 
     .sub_heading {
@@ -796,10 +807,6 @@
 
     .game_theory {
         padding: 48px 0 48px 0;
-    }
-
-    .game_theory_content2 {
-        padding: 15px 0 0;
     }
 
     .heading4 {
@@ -819,7 +826,10 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -70px;
+        top: -54px;
+    }
+    .cloud_img{
+        height: 95px !important;
     }
 
     .timelinepy {
@@ -873,35 +883,41 @@
 }
 
 @media(min-width:992px) {
-    .eye{
+    .cloud_img {
+        height: 140px !important;
+    }
+
+    .eye {
         width: 20px;
     }
-            .bright {
-                    top: 115px;
-                    right: 156px;
-                }
-            
-                .bright1 {
-                    top: 115px;
-                    left: 210px;
-                }
-            
-                .bright2 {
-                    top: 109px;
-                    left: 145px;
-                }
-            
-                .bright3 {
-                    top: 112px;
-                    left: 102px;
-                }
+
+    .bright {
+        top: 115px;
+        right: 156px;
+    }
+
+    .bright1 {
+        top: 115px;
+        left: 210px;
+    }
+
+    .bright2 {
+        top: 109px;
+        left: 145px;
+    }
+
+    .bright3 {
+        top: 112px;
+        left: 102px;
+    }
+
     .topBtn {
         width: 40px;
         height: 40px;
     }
 
     .stretch_gain_bottom_shadow {
-        top: -85px;
+        top: -75px;
     }
 
     .container2 {
@@ -929,8 +945,8 @@
     }
 
     .a_man {
-        width: 87.72px;
-        min-height: 223.43px;
+        width: 100px;
+        min-height: 237px;
         padding-bottom: 57px;
     }
 
@@ -947,10 +963,6 @@
         max-width: 400px;
     }
 
-    /* .main_image {
-        max-width: 530px;
-        transform: translateY(-35px);
-    } */
     .main_image {
         max-width: 530px;
         transform: translate(-4px, -20px);
@@ -983,30 +995,32 @@
 }
 
 @media(min-width:1024px) {
-        .fav_icon {
-                width: 68px;
-            }
-        .bright {
-                top: 125px;
-                right: 167px;
-            }
-        
-            .bright1 {
-                top: 124px;
-                left: 219px;
-            }
-        
-            .bright2 {
-                top: 122px;
-                left: 158px;
-            }
-        
-            .bright3 {
-                top: 122px;
-                left: 117px;
-            }
+    .fav_icon {
+        width: 68px;
+    }
+
+    .bright {
+        top: 125px;
+        right: 167px;
+    }
+
+    .bright1 {
+        top: 124px;
+        left: 219px;
+    }
+
+    .bright2 {
+        top: 122px;
+        left: 158px;
+    }
+
+    .bright3 {
+        top: 122px;
+        left: 117px;
+    }
+
     .stretch_gain_bottom_shadow {
-        top: -102px;
+        top: -80px;
     }
 
     .roadmap {
@@ -1040,35 +1054,36 @@
     }
 
     .main_image {
-        transform: translate(-4px, -27px);
+        transform: translate(-4px, -24px);
     }
 }
 
 @media(min-width:1200px) {
     .eye {
-            width: 46px;
-        }
+        width: 46px;
+    }
+
     .bright {
-            top: 187px;
-            right: 178px;
-        }
-    
-        .bright1 {
-            top: 187px;
-            left: 257px;
-        }
-    
-        .bright2 {
-            top: 206px;
-            left: 193px;
-        }
-    
-        .bright3 {
-            top: 209px;
-            left: 128px;
-        }
+        top: 187px;
+        right: 178px;
+    }
+
+    .bright1 {
+        top: 187px;
+        left: 257px;
+    }
+
+    .bright2 {
+        top: 206px;
+        left: 193px;
+    }
+
+    .bright3 {
+        top: 209px;
+        left: 128px;
+    }
+
     .nav_bar {
-        padding-top: 12px;
         height: 75px;
     }
 
@@ -1080,16 +1095,12 @@
         padding: 64px 0 83.2px 0;
     }
 
-    .game_theory_content2 {
-        padding: 21px 0 0;
-    }
-
     .heading4 {
         padding: 0 0 44px;
     }
 
     .heading {
-        padding: 28px 0 32px 0;
+        padding: 20px 0 22px 0;
     }
 
     .leading_4xl {
@@ -1097,7 +1108,7 @@
     }
 
     .roadmap {
-        padding: 0 0 117.83px 0px;
+        padding: 0 0 152.83px 0px;
     }
 
     .timelinepy {
@@ -1105,7 +1116,7 @@
     }
 
     .sub_heading {
-        padding: 320px 0 5px;
+        padding: 334px 0 5px;
     }
 
     .animal {
@@ -1165,25 +1176,32 @@
 }
 
 @media(min-width:1400px) {
+    .cloud_img {
+        height: 233px !important;
+    }
+
     .bright {
-            top: 191px;
-            right: 127px;
-        }
-    
-        .bright1 {
-            top: 191px;
-            left: 306px;
-        }
-    
-        .bright2 {
-            top: 171px;
-        }
-    
-        .bright3 {
-            top: 173px;
-        }
+        top: 191px;
+        right: 127px;
+    }
+
+    .bright1 {
+        top: 191px;
+        left: 306px;
+    }
+
+    .bright2 {
+        top: 171px;
+    }
+
+    .bright3 {
+        top: 173px;
+    }
+
     .stretch_gain_bottom_shadow {
-        top: -125px;
+        top: -120px;
+        left: 0;
+        right: 0;
     }
 
     .timelinepy {
@@ -1196,5 +1214,19 @@
 
     .bear {
         transform: translate(-62px, 20px);
+    }
+}
+
+@media(min-width:1920px) {
+    .stretch_gain_bottom_shadow {
+        top: -156px;
+    }
+
+    .hero_bg {
+        padding-bottom: 28px;
+    }
+
+    .stretch_gain_bottom_shadow {
+        top: -110px;
     }
 }
