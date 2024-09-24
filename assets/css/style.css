@@ -206,13 +206,11 @@
 .main_image {
     max-width: 300px;
 }
-
 .main_image_position {
-    bottom: 0;
     top: 0;
     right: 0;
+    bottom: 0;
 }
-
 /* ============================ Amplify and stretch gains ======================= */
 .bg_image {
     background-image: url(../images/webp/Section2_bg.webp);
@@ -237,13 +235,13 @@
 }
 
 .bull {
-    max-width: 300.81px;
-    min-height: 260.21px;
+    max-width: 420.81px;
+    min-height: 271.21px;
 }
 
 .bear {
-    max-width: 290.64px;
-    min-height: 245.34px;
+    max-width: 390.64px;
+    min-height: 263.34px;
     transform: translate(-20px, 20px);
 }
 
@@ -255,10 +253,6 @@
     top: -37px;
     left: 0;
     right: 0;
-}
-
-.cloud_img {
-    height: 60px !important;
 }
 
 /* ============================= timeline ======================== */
@@ -662,11 +656,16 @@
     .bull_bear {
         top: 67px;
     }
+        .bear {
+            max-width: 439.64px;
+            min-height: 263.34px;
+            transform: translate(-20px, 20px);
+        }
 
     .bull {
-        max-width: 270.81px;
-        min-height: 225.21px;
-        transform: translate(-10px, 25px);
+        max-width: 484.81px;
+        min-height: 270.21px;
+        transform: translate(-10px, -6px);
     }
 }
 
@@ -681,11 +680,11 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -30px;
+        top: -46px;
     }
 
     .bull_bear {
-        top: 70px;
+        top: -46px;
     }
 
     .animal {
@@ -693,22 +692,19 @@
     }
 
     .bull {
-        transform: translate(-20px, 3px);
+        transform: translate(-27px, 91px);
     }
 
     .bear {
-        transform: translate(-20px, 5px);
+        transform: translate(-20px, 106px);
     }
 }
 
 @media(min-width:576px) {
     .stretch_gain_bottom_shadow {
-            top: -39px;
-        }
-    
-        .cloud_img {
-            height: 80px !important;
-        }
+        top: -57px;
+    }
+
     .dotted {
         top: 0;
         left: 0;
@@ -758,14 +754,11 @@
     }
 
     .bull {
-        max-width: 300.81px;
-        transform: translate(19px, 42px);
+        transform: translate(15px, 26px);
     }
 
     .bear {
-        max-width: 250.64px;
-        min-height: 230.34px;
-        transform: translate(18px, 43px);
+        transform: translate(18px, 28px);
     }
 
     .btn_enter {
@@ -786,6 +779,9 @@
 }
 
 @media(min-width:768px) {
+    .hero_bg {
+            background-position: left;
+        }
     .nav_bar {
         height: 60px;
         padding-top: 18px;
@@ -816,10 +812,7 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -54px;
-    }
-    .cloud_img{
-        height: 95px !important;
+        top: -74px;
     }
 
     .timelinepy {
@@ -856,13 +849,12 @@
     }
 
     .bull {
-        max-width: 320.81px;
-        transform: translate(95px, 30px);
+        transform: translate(9px, -54px);
     }
 
     .bear {
-        max-width: 240.64px;
-        transform: translate(115px, 50px);
+        max-width: 335px;
+        transform: translate(13px, -32px);
     }
 }
 
@@ -870,35 +862,37 @@
     .container2 {
         padding-left: 76px;
     }
+           .stretch_gain_bottom_shadow {
+               top: -80px;
+           }
 }
 
-@media(min-width:992px) {
-    .cloud_img {
-        height: 140px !important;
-    }
-
+@media(min-width:992px) {   
+        .hero_bg {
+                background-position: center;
+            }
     .eye {
         width: 20px;
     }
 
     .bright {
-        top: 115px;
-        right: 156px;
+        top: 147px;
+        right: 135px;
     }
 
     .bright1 {
-        top: 115px;
-        left: 210px;
+        top: 145px;
+        left: 288px;
     }
 
     .bright2 {
-        top: 109px;
-        left: 145px;
+        top: 137px;
+        left: 143px;
     }
 
     .bright3 {
-        top: 112px;
-        left: 102px;
+        top: 137px;
+        left: 177px;
     }
 
     .topBtn {
@@ -907,7 +901,7 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -75px;
+        top: -100px;
     }
 
     .container2 {
@@ -923,14 +917,10 @@
     }
 
     .bull {
-        max-width: 380.81px;
-        min-height: 420.21px;
         transform: translate(48px, 21px);
     }
 
     .bear {
-        max-width: 360.64px;
-        min-height: 345.34px;
         transform: translate(16px, 49px);
     }
 
@@ -990,27 +980,27 @@
     }
 
     .bright {
-        top: 125px;
+        top: 149px;
         right: 167px;
     }
 
     .bright1 {
-        top: 124px;
+        top: 149px;
         left: 219px;
     }
 
     .bright2 {
-        top: 122px;
+        top: 149px;
         left: 158px;
     }
 
     .bright3 {
-        top: 122px;
+        top: 149px;
         left: 117px;
     }
 
     .stretch_gain_bottom_shadow {
-        top: -80px;
+        top: -100px;
     }
 
     .roadmap {
@@ -1024,13 +1014,13 @@
     .bull {
         max-width: 493.81px;
         min-height: 470.21px;
-        transform: translate(0, -26px);
+        transform: translate(0, -3px);
     }
 
     .bear {
         max-width: 400.64px;
         min-height: 390.34px;
-        transform: translate(-20px, 25px);
+        transform: translate(-20px, 50px);
     }
 
     .bull_bear {
@@ -1049,17 +1039,20 @@
 }
 
 @media(min-width:1200px) {
+    .stretch_gain_bottom_shadow {
+            top: -119px;
+        }
     .eye {
         width: 46px;
     }
 
     .bright {
-        top: 187px;
+        top: 209px;
         right: 178px;
     }
 
     .bright1 {
-        top: 187px;
+        top: 209px;
         left: 257px;
     }
 
@@ -1125,7 +1118,7 @@
     }
 
     .bull_bear {
-        top: -424px;
+        top: -408px;
     }
 
     .main_para {
@@ -1166,10 +1159,9 @@
 }
 
 @media(min-width:1400px) {
-    .cloud_img {
-        height: 233px !important;
-    }
-
+        .bull_bear {
+                top: -389px;
+            }
     .bright {
         top: 191px;
         right: 127px;
@@ -1189,9 +1181,7 @@
     }
 
     .stretch_gain_bottom_shadow {
-        top: -120px;
-        left: 0;
-        right: 0;
+        top: -140px;
     }
 
     .timelinepy {
@@ -1207,16 +1197,20 @@
     }
 }
 
-@media(min-width:1920px) {
+@media(min-width:1600px) {
+        .bull_bear {
+                top: -376px;
+            }
     .stretch_gain_bottom_shadow {
-        top: -156px;
+        top: -150px;
     }
 
     .hero_bg {
-        padding-bottom: 28px;
+        padding-bottom: 100px;
     }
-
+}
+@media(min-width:1920px) {
     .stretch_gain_bottom_shadow {
-        top: -110px;
+        top: -166px;
     }
 }
