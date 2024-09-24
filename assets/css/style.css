@@ -336,7 +336,6 @@
     background-size: cover;
     top: -8px;
     z-index: 2;
-
 }
 
 .container2 {
@@ -398,10 +397,6 @@
     padding: 8px 0 0;
 }
 
-.you {
-    font-weight: 800;
-}
-
 .you_bg {
     background-color: var(--color-blue);
     padding: 18.75px 17.93px;
@@ -439,10 +434,6 @@
     max-width: 103px !important;
     min-height: 138px;
     padding: 12px 4px 4px;
-}
-
-.yield_growth {
-    max-width: 122px;
 }
 
 .first_col {
