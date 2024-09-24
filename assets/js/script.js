@@ -5,7 +5,6 @@ function open_nav() {
 }
 // scroll top btn 
 const topBtn = document.querySelector(".topBtn")
-
 window.addEventListener("scroll", function () {
     if (window.scrollY > 60) {
         topBtn.classList.add("show")
