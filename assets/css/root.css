@@ -98,11 +98,8 @@
 
 @media(min-width:1200px) {
     :root {
-        /* font-size */
         --font-xxsm: 14px;
-        --font-xsm: 16px;
         --font-sm: 18px;
-        --font-md: 20px;
         --font-lg: 24px;
         --font-xl: 46px;
         --font-2xl: 52px;
