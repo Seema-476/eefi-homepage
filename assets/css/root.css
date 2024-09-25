@@ -1,7 +1,7 @@
 :root {
     /* font-size */
-    --font-xxsm: 14px;
-    --font-xsm: 12px;
+    --font-xxsm: 12px;
+    --font-xsm: 13px;
     --font-sm: 18px;
     --font-md: 15px;
     --font-lg: 20px;
@@ -83,6 +83,7 @@
 
 @media(min-width:576px) {
     :root {
+        --font-xxsm: 14px;
         --font-lg: 24px;
         --font-xsm: 14px;
         --font-xl: 35px;
