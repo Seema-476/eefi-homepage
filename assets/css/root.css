@@ -15,6 +15,7 @@
     --box-bg: #1643c31a;
     --border: #FFFFFF29;
     --box-shadow: #FFFFFF42;
+    --nav-bg: #0d2976;
 }
 
 /* font-color */
@@ -32,7 +33,7 @@
 
 /* bg clr */
 .bg-color-white {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
 }
 
 .bg_color_black {
@@ -72,6 +73,14 @@
     font-size: var(--font-3xl);
 }
 
+.about {
+    font-size: 14px !important;
+}
+
+.about1 {
+    font-size: 14px !important;
+}
+
 @media(min-width:576px) {
     :root {
         --font-lg: 24px;
@@ -85,7 +94,15 @@
         --font-xsm: 16px;
         --font-md: 20px;
         --font-2xl: 42px;
-        --font-3xl: 50px;
+        --font-3xl: 48px;
+    }
+
+    .about {
+        font-size: 16px !important;
+    }
+
+    .about1 {
+        font-size: 16px !important;
     }
 }
 

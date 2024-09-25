@@ -19,8 +19,17 @@
     src: url(/assets/font/fonts/neue-machina/NeueMachina-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'machina';
+    src: url(/assets/font/fonts/neue-machina/NeueMachina-Ultrabold.ttf);
+}
+
 .font_Neue_Machina {
     font-family: 'neue machina', sans-serif;
+}
+
+.font_Neue_Machina2 {
+    font-family: 'machina', sans-serif;
 }
 
 .font_Plus_Jakarta_Sans {
@@ -105,6 +114,7 @@
     bottom: 0;
     left: 0;
     transition: .5s;
+    margin-bottom: 2px;
 }
 
 .about1:hover::after {
@@ -128,6 +138,10 @@
 }
 
 .btn_enter:hover {
+    scale: .93;
+}
+
+.dropdown_text:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
@@ -166,6 +180,10 @@
     max-width: 1920px;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 /* =============== hero_section ============= */
 .hero_bg {
     background-image: url(../images/webp/hero_bg.webp);
@@ -189,13 +207,13 @@
 }
 
 .main_heading {
-    padding: 55px 0 15px 0;
+    padding: 50px 0 13px 0;
     max-width: 463px;
 }
 
 .main_para {
     max-width: 529px;
-    padding: 0 0 15px 0;
+    padding: 0 0 10px 0;
 }
 
 .Audited {
@@ -206,11 +224,13 @@
 .main_image {
     max-width: 300px;
 }
+
 .main_image_position {
     top: 0;
     right: 0;
     bottom: 0;
 }
+
 /* ============================ Amplify and stretch gains ======================= */
 .bg_image {
     background-image: url(../images/webp/Section2_bg.webp);
@@ -381,12 +401,7 @@
     padding: 0 0 20px;
 }
 
-.game_theory_content {
-    max-width: 515.83px;
-}
-
 .game_theory_content2 {
-    max-width: 489.98px;
     padding: 8px 0 0;
 }
 
@@ -427,10 +442,6 @@
     max-width: 103px !important;
     min-height: 138px;
     padding: 12px 4px 4px;
-}
-
-.first_col {
-    max-width: 570px;
 }
 
 .second_col {
@@ -571,7 +582,7 @@
         justify-content: center;
         flex-direction: column;
         position: fixed;
-        background: var(--color-black);
+        background: var(--nav-bg);
         top: 0;
         right: -100%;
         transition: all 300ms linear;
@@ -656,11 +667,12 @@
     .bull_bear {
         top: 67px;
     }
-        .bear {
-            max-width: 439.64px;
-            min-height: 263.34px;
-            transform: translate(-20px, 20px);
-        }
+
+    .bear {
+        max-width: 439.64px;
+        min-height: 263.34px;
+        transform: translate(-20px, 20px);
+    }
 
     .bull {
         max-width: 484.81px;
@@ -779,9 +791,14 @@
 }
 
 @media(min-width:768px) {
+    .hero_content {
+        display: flex;
+    }
+
     .hero_bg {
-            background-position: left;
-        }
+        background-position: left;
+    }
+
     .nav_bar {
         height: 60px;
         padding-top: 18px;
@@ -808,7 +825,7 @@
     }
 
     .leading_llg {
-        line-height: 24px;
+        line-height: 23px;
     }
 
     .stretch_gain_bottom_shadow {
@@ -837,7 +854,7 @@
     }
 
     .leading_5xl {
-        line-height: 61.74px;
+        line-height: 55.74px;
     }
 
     .nav_bar ul {
@@ -862,15 +879,29 @@
     .container2 {
         padding-left: 76px;
     }
-           .stretch_gain_bottom_shadow {
-               top: -80px;
-           }
+
+    .stretch_gain_bottom_shadow {
+        top: -80px;
+    }
 }
 
-@media(min-width:992px) {   
-        .hero_bg {
-                background-position: center;
-            }
+@media(min-width:992px) {
+    .first_col {
+        max-width: 570px;
+    }
+
+    .game_theory_content {
+        max-width: 515.83px;
+    }
+
+    .game_theory_content2 {
+        max-width: 489.98px;
+    }
+
+    .hero_bg {
+        background-position: center;
+    }
+
     .eye {
         width: 20px;
     }
@@ -936,6 +967,7 @@
 
     .main_para {
         max-width: 429px;
+        padding: 0 0 15px 0;
     }
 
     .main_heading {
@@ -1040,8 +1072,9 @@
 
 @media(min-width:1200px) {
     .stretch_gain_bottom_shadow {
-            top: -119px;
-        }
+        top: -119px;
+    }
+
     .eye {
         width: 46px;
     }
@@ -1159,9 +1192,10 @@
 }
 
 @media(min-width:1400px) {
-        .bull_bear {
-                top: -389px;
-            }
+    .bull_bear {
+        top: -389px;
+    }
+
     .bright {
         top: 191px;
         right: 127px;
@@ -1198,9 +1232,10 @@
 }
 
 @media(min-width:1600px) {
-        .bull_bear {
-                top: -376px;
-            }
+    .bull_bear {
+        top: -376px;
+    }
+
     .stretch_gain_bottom_shadow {
         top: -150px;
     }
@@ -1209,6 +1244,7 @@
         padding-bottom: 100px;
     }
 }
+
 @media(min-width:1920px) {
     .stretch_gain_bottom_shadow {
         top: -166px;
